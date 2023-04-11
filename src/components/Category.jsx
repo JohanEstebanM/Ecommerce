@@ -4,6 +4,7 @@ import { getData } from '../services/getData';
 const Category = () => {
   const [categories, setCategories] = useState([]);
   const [categoryValue, setCategoryValue] = useState('');
+  const [nameValue, SetNameValue] = useState('');
 
   const loadCategories = async () => {
     const res = await getData(
@@ -19,6 +20,9 @@ const Category = () => {
   return (
     <div>
       <>
+        <div>
+          <input type="search" name="query" placeholder="type product name" />
+        </div>
         <fieldset>
           <legend>Category</legend>
           {categories.map((Category) => (

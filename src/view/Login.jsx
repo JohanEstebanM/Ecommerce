@@ -1,4 +1,5 @@
 import React from 'react';
+import LoginForm from '../components/login/LoginForm';
 
 const Login = () => {
   return (
@@ -15,15 +16,7 @@ const Login = () => {
           <p>la contraseña</p>
         </div>
       </section>
-      <form action="">
-        <section>
-          <p>Email</p>
-          <input type="text" />
-          <p>password</p>
-          <input type="password" />
-        </section>
-        <button>Login</button>
-      </form>
+      <LoginForm />
       <p>
         Don't have an account? <a href="">Sign up</a>
       </p>
