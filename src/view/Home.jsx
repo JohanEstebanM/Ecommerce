@@ -3,16 +3,19 @@ import NavBar from '../components/NavBar';
 import Category from '../components/Category';
 import Product from '../components/Product';
 import { getData } from '../services/getData';
+import { getProducts } from '../services/getProducts';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [content, setContent] = useState(null);
+  //const url = new URL(Request.url);
+  //const category = url.searchParams.get('category');
 
   const loadProducts = async () => {
     try {
       setIsLoading(true);
-      const res = await getData('https://e-commerce-api.academlo.tech/api/v1/products');
+      const res = await getProducts();
       setProducts(res.data.products);
       setIsLoading(false);
     } catch (error) {

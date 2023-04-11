@@ -3,6 +3,7 @@ import { getData } from '../services/getData';
 
 const Category = () => {
   const [categories, setCategories] = useState([]);
+  const [categoryValue, setCategoryValue] = useState('');
 
   const loadCategories = async () => {
     const res = await getData(
@@ -17,10 +18,25 @@ const Category = () => {
 
   return (
     <div>
-      <h2>Categories</h2>
-      {categories.map((Category) => (
-        <p key={Category.id}>{Category.name}</p>
-      ))}
+      <>
+        <fieldset>
+          <legend>Category</legend>
+          {categories.map((Category) => (
+            <div key={Category.id}>
+              <label htmlFor={Category.id + Category.name}>{Category.name}</label>
+              <input
+                type="radio"
+                name="category"
+                value={Category.id}
+                checked={categoryValue?.id === Category.id}
+                id={Category.id + Category.name}
+                onChange={() => setCategoryValue(Category)}
+              />
+            </div>
+          ))}
+        </fieldset>
+        <button type="submit">filter</button>
+      </>
     </div>
   );
 };

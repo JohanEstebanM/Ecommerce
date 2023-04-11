@@ -1,5 +1,4 @@
 import React from 'react';
-import Shop from '../view/Shop';
 
 const Product = ({ product: productData }) => {
   return (
