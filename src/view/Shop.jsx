@@ -2,11 +2,12 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Product from '../components/Product';
 
-const Shop = () => {
+const Shop = ({ id }) => {
   return (
     <div>
       <NavBar />
       <main>
+        <p>{id}</p>
         <img src="" alt="" />
         <section>
           <h2>nombre del producto</h2>
@@ -21,7 +22,7 @@ const Shop = () => {
           </div>
           <button>
             <p>add to card</p>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i className="fa-solid fa-cart-shopping"></i>
           </button>
         </section>
         <h3>discover similar items</h3>

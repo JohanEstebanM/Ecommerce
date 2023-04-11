@@ -1,15 +1,16 @@
 import React from 'react';
+import Shop from '../view/Shop';
 
-const Product = () => {
+const Product = ({ product: productData }) => {
   return (
     <div>
-      <img src="" alt="" />
+      <img src={`${productData.productImgs[1]}`} alt={`${productData.title}`} />
       <section>
-        <h2>Nombre del producto</h2>
+        <h2>{productData.title}</h2>
         <p>price:</p>
-        <p>precio del producto</p>
+        <p>{productData.price}</p>
         <button>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i className="fa-solid fa-cart-shopping"></i>
         </button>
       </section>
     </div>

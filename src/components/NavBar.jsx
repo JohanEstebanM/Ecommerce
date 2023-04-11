@@ -6,17 +6,17 @@ const NavBar = () => {
       <h2>Ecommerce</h2>
       <button>
         <a href="">
-          <i class="fa-regular fa-user"></i>
+          <i className="fa-regular fa-user"></i>
         </a>
       </button>
       <button>
         <a href="">
-          <i class="fa-solid fa-box-archive"></i>
+          <i className="fa-solid fa-box-archive"></i>
         </a>
       </button>
       <button>
         <a href="">
-          <i class="fa-solid fa-cart-shopping"></i>
+          <i className="fa-solid fa-cart-shopping"></i>
         </a>
       </button>
     </nav>

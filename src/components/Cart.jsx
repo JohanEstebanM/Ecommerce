@@ -7,7 +7,7 @@ const Cart = () => {
     <div>
       <h2>Carrito de compras</h2>
       <button>
-        <i class="fa-regular fa-trash-can"></i>
+        <i className="fa-regular fa-trash-can"></i>
       </button>
       <div>
         <p>aqui un map con la info de los productos</p>

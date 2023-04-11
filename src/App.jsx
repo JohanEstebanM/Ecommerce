@@ -3,30 +3,15 @@ import Cart from './components/Cart';
 import Login from './view/Login';
 import Home from './view/Home';
 import Shop from './view/Shop';
+import SignUp from './view/SignUp';
+import Category from './components/Category';
 
 const App = () => {
   return (
     <div>
       <p>hola</p>
-      <Home />
-      <br />
-      <br />
-      <Cart></Cart>
-      <br />
-      <br />
-      <Login></Login>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Shop />
+      {<Home />}
+      {/*<SignUp />*/}
     </div>
   );
 };

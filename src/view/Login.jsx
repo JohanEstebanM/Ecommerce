@@ -7,11 +7,11 @@ const Login = () => {
       <section>
         <h3>test data</h3>
         <div>
-          <i class="fa-regular fa-envelope"></i>
+          <i className="fa-regular fa-envelope"></i>
           <p>el correo</p>
         </div>
         <div>
-          <i class="fa-solid fa-lock"></i>
+          <i className="fa-solid fa-lock"></i>
           <p>la contraseña</p>
         </div>
       </section>
